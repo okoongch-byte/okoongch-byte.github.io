@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>okoongch-byte | Developer Studio</title>
+    <meta name="description" content="Independent Software Developer specializing in iOS, Flutter, and Desktop Application Engineering.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-main: #0b0f17;
+            --bg-card: #151c28;
+            --border-color: #232d3f;
+            --accent-blue: #3b82f6;
+            --accent-cyan: #06b6d4;
+            --accent-orange: #f97316;
+            --text-title: #f8fafc;
+            --text-body: #94a3b8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: var(--bg-main); color: var(--text-body); line-height: 1.6; }
+        .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+        header { padding: 80px 0 50px; }
+        .dev-tag { font-family: 'Fira Code', monospace; color: var(--accent-cyan); font-size: 0.95rem; margin-bottom: 12px; display: inline-block; }
+        h1 { font-size: 3rem; font-weight: 800; color: var(--text-title); letter-spacing: -1px; margin-bottom: 16px; }
+        p.hero-desc { font-size: 1.2rem; max-width: 650px; margin-bottom: 24px; }
+        .skills-badges { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 30px; }
+        .badge { background-color: var(--bg-card); border: 1px solid var(--border-color); color: var(--text-title); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; }
+        .section-title { color: var(--text-title); font-size: 1.8rem; font-weight: 700; margin-bottom: 24px; }
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-bottom: 70px; }
+        .project-card { background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 28px; transition: transform 0.2s ease, border-color 0.2s ease; }
+        .project-card:hover { transform: translateY(-4px); border-color: var(--accent-blue); }
+        .project-tag { font-family: 'Fira Code', monospace; font-size: 0.8rem; color: var(--accent-orange); text-transform: uppercase; margin-bottom: 8px; }
+        .project-card h3 { color: var(--text-title); font-size: 1.4rem; margin-bottom: 10px; }
+        .project-card p { font-size: 0.95rem; margin-bottom: 20px; }
+        .btn-link { display: inline-flex; align-items: center; gap: 8px; color: var(--accent-blue); text-decoration: none; font-weight: 700; font-size: 0.95rem; }
+        .info-box { background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 32px; margin-bottom: 70px; }
+        .info-box h2 { color: var(--text-title); margin-bottom: 16px; }
+        .info-box p { margin-bottom: 12px; font-size: 0.95rem; }
+        footer { border-top: 1px solid var(--border-color); padding: 30px 0; text-align: center; font-size: 0.85rem; }
+        footer a { color: var(--text-title); text-decoration: none; }
+        @media (max-width: 600px) { h1 { font-size: 2.2rem; } }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <span class="dev-tag">&lt;okoongch-byte /&gt;</span>
+            <h1>Software Engineer & App Developer</h1>
+            <p class="hero-desc">Building modern mobile applications, desktop solutions, and automation software with a focus on design, performance, and user privacy.</p>
+            
+            <div class="skills-badges">
+                <span class="badge">iOS / Swift</span>
+                <span class="badge">Flutter / Dart</span>
+                <span class="badge">Python</span>
+                <span class="badge">C# / .NET</span>
+            </div>
+        </header>
+
+        <section>
+            <h2 class="section-title">Featured Products</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="project-tag">iOS App • Photo & Video</div>
+                    <h3>1994 Memory</h3>
+                    <p>A retro 90s camera app that converts photos into vintage analog film style with authentic color grading and customizable date stamps.</p>
+                    <a href="https://apps.apple.com/app/id6793057593" target="_blank" class="btn-link">
+                        View on App Store &rarr;
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-tag">Automation & Tools</div>
+                    <h3>Developer Utilities</h3>
+                    <p>Custom-built automation systems, data integrations, and cross-platform utilities tailored for high-efficiency workflows.</p>
+                    <span style="font-size: 0.85rem; color: #64748b;">Internal & Enterprise Solutions</span>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="info-box">
+            <h2>Publisher Privacy Policy & Transparency</h2>
+            <p><strong>okoongch-byte</strong> operates as an independent developer entity. We prioritize user privacy and data security across all software applications published under our domain.</p>
+            <p><strong>Ad Networks & Analytics:</strong> Our mobile apps may integrate third-party ad providers, including Google AdMob and Unity Ads, to serve advertisements. These providers may process non-personally identifiable device information based on user consent settings (e.g., App Tracking Transparency on iOS).</p>
+            <p><strong>Support & Business Inquiries:</strong> For technical support, legal inquiries, or privacy issues regarding any of our applications, contact us at:</p>
+            <p><a href="mailto:okoongch.dev@gmail.com" style="color: var(--accent-cyan); text-decoration: none; font-weight: 600;">okoongch.dev@gmail.com</a></p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 okoongch-byte. All rights reserved. | Official Developer Portal</p>
+        </footer>
+    </div>
+
+</body>
+</html>
