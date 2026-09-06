@@ -3,43 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>App Support - 1994 Memory & Voice2</title>
+  <title>App Support Center</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; padding: 40px 20px; max-width: 650px; margin: 0 auto; color: #222; }
-    h1 { border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px; }
-    h2 { font-size: 1.2rem; margin-bottom: 8px; color: #111; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
-    .card { background: #f8f9fa; border: 1px solid #e9ecef; padding: 20px; border-radius: 8px; margin-top: 20px; }
-    a { color: #0066cc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .footer-links { margin-top: 15px; padding-top: 10px; border-top: 1px solid #e0e0e0; font-size: 0.95rem; }
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #475569;
+      --primary: #2563eb;
+      --border: #e2e8f0;
+      --radius: 12px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+    .container { max-width: 800px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 36px; }
+    header h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; }
+    header p { color: var(--text-muted); font-size: 1rem; margin-top: 6px; }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 28px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    }
+    .card h2 { font-size: 1.2rem; margin-bottom: 8px; color: var(--text); }
+    .card a { color: var(--primary); text-decoration: none; font-weight: 500; }
+    .card a:hover { text-decoration: underline; }
+
+    .section-title { font-size: 1.2rem; font-weight: 600; margin-bottom: 16px; color: var(--text); }
+
+    .apps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .app-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .app-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+    .app-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+    .app-card h3 { font-size: 1.1rem; font-weight: 600; }
+    .app-card p { font-size: 0.9rem; color: var(--text-muted); }
+    .badge { font-size: 0.75rem; background: #eff6ff; color: #1d4ed8; padding: 3px 8px; border-radius: 20px; font-weight: 600; }
+
+    footer {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    footer h3 { color: var(--text); font-size: 1rem; margin-bottom: 8px; }
   </style>
 </head>
 <body>
-  <h1>App Support & Legal Information</h1>
-  <p>Welcome to the official support page for <b>Voice2</b> and <b>1994 Memory</b>.</p>
-  
-  <div class="card">
-    <h3>Customer Support & Contact</h3>
-    <p>If you encounter any issues, have questions regarding in-app purchases, or need technical assistance, please feel free to reach out:</p>
-    <p><b>Email:</b> <a href="mailto:okoong.ch@gmail.com">okoong.ch@gmail.com</a></p>
-  </div>
+  <div class="container">
+    <header>
+      <h1>App Support Center</h1>
+      <p>Official support and legal portal for mobile applications</p>
+    </header>
 
-  <div class="card">
-    <h2>Voice2</h2>
-    <p>An intuitive audio recording and utility app designed for high-quality voice recording, clear audio management, and seamless playback.</p>
-  </div>
-
-  <div class="card">
-    <h2>1994 Memory</h2>
-    <p>A retro camera app designed to bring back 90s aesthetic film tones, Polaroid vibes, and vintage photo filters to your favorite memories.</p>
-  </div>
-
-  <div class="card">
-    <h3>Privacy & Data Safety</h3>
-    <p>We respect your privacy. Our applications do not require user account creation. All recordings, photos, and personal files created within the apps are stored locally on your device.</p>
-    <div class="footer-links">
-      <p><b>Legal Link:</b> <a href="privacy.html">Read our Privacy Policy</a></p>
+    <div class="card">
+      <h2>Customer Support & Contact</h2>
+      <p>If you encounter issues, have questions regarding in-app purchases, or need assistance, please feel free to reach out:</p>
+      <p style="margin-top: 10px;"><b>Email:</b> <a href="mailto:okoong.ch@gmail.com">okoong.ch@gmail.com</a></p>
     </div>
+
+    <h2 class="section-title">Applications</h2>
+    <div class="apps-grid">
+      <div class="app-card">
+        <div class="app-header">
+          <h3>Voice2</h3>
+          <span class="badge">iOS / Android</span>
+        </div>
+        <p>High-quality voice recorder utility with clear audio management and seamless playback.</p>
+      </div>
+
+      <div class="app-card">
+        <div class="app-header">
+          <h3>1994 Memory</h3>
+          <span class="badge">iOS / Android</span>
+        </div>
+        <p>Retro camera app featuring 90s aesthetic film tones, Polaroid vibes, and vintage filters.</p>
+      </div>
+    </div>
+
+    <footer>
+      <h3>Privacy & Data Protection</h3>
+      <p>We value your privacy. Applications operate locally on your device without requiring account creation. All data created remains under your control.</p>
+      <p style="margin-top: 12px;"><b>Legal Policy:</b> <a href="privacy.html">Read Privacy Policy</a></p>
+    </footer>
   </div>
 </body>
 </html>
