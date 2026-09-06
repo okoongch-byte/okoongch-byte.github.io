@@ -3,72 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - 1994 Memory</title>
+    <title>Privacy Policy - Mobile Applications</title>
     <style>
+        :root {
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #0f172a;
+            --text-muted: #475569;
+            --primary: #2563eb;
+            --border: #e2e8f0;
+            --radius: 12px;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: #222;
+            color: var(--text);
             max-width: 800px;
             margin: 0 auto;
-            padding: 30px 20px;
-            background-color: #f9f9f9;
+            padding: 40px 20px;
+            background-color: var(--bg);
         }
         .content {
-            background: #ffffff;
+            background: var(--card-bg);
             padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
         }
-        h1 { font-size: 2rem; margin-bottom: 10px; color: #111; }
-        h2 { font-size: 1.3rem; margin-top: 30px; color: #222; border-bottom: 1px solid #eee; padding-bottom: 8px; }
-        p, li { font-size: 1rem; color: #444; }
-        ul { padding-left: 20px; }
-        a { color: #0066cc; text-decoration: none; }
+        h1 { font-size: 2rem; margin-bottom: 8px; color: var(--text); letter-spacing: -0.02em; }
+        .subtitle { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+        h2 { font-size: 1.25rem; margin-top: 28px; margin-bottom: 12px; color: var(--text); border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+        p, li { font-size: 0.98rem; color: var(--text-muted); margin-bottom: 12px; }
+        ul { padding-left: 20px; margin-bottom: 16px; }
+        li { margin-bottom: 6px; }
+        a { color: var(--primary); text-decoration: none; font-weight: 500; }
         a:hover { text-decoration: underline; }
-        .footer { margin-top: 40px; font-size: 0.85rem; color: #777; text-align: center; }
+        .highlight-box {
+            background-color: #eff6ff;
+            border-left: 4px solid var(--primary);
+            padding: 14px 18px;
+            border-radius: 6px;
+            margin: 16px 0;
+        }
+        .highlight-box p { margin: 0; color: #1e40af; font-weight: 500; }
+        .footer { margin-top: 36px; font-size: 0.85rem; color: var(--text-muted); text-align: center; padding-top: 16px; border-top: 1px solid var(--border); }
     </style>
 </head>
 <body>
 
 <div class="content">
     <h1>Privacy Policy</h1>
-    <p><strong>Effective Date:</strong> August 3, 2026</p>
-    <p><strong>1994 Memory</strong> ("the App") is developed and maintained by <strong>Vuttichai Saijaroen</strong> ("we", "us", or "our"). This Privacy Policy explains how we collect, use, and protect your information when you use our mobile application.</p>
+    <div class="subtitle">
+        <strong>Effective Date:</strong> September 6, 2026
+    </div>
 
-    <h2>1. Information We Access & Process</h2>
-    <p>To provide core functionalities such as applying vintage film camera filters, the App requires access to the following device features:</p>
+    <p>This Privacy Policy governs the collection, use, and protection of information across all mobile applications ("the Applications" or "Apps") developed and maintained by <strong>Vuttichai Saijaroen</strong> ("we", "us", or "our"), including but not limited to <strong>Voice2</strong>, <strong>1994 Memory</strong>, and future software published under our account.</p>
+
+    <div class="highlight-box">
+        <p>Summary Guarantee: Our apps are designed with strict privacy principles. Your personal files (audio recordings, photos, and videos) are processed locally on your device and are NEVER transmitted, stored, or collected on external servers.</p>
+    </div>
+
+    <h2>1. Device Permissions & Local Processing</h2>
+    <p>Depending on the specific functionality of each App, access to certain device features may be requested:</p>
     <ul>
-        <li><strong>Camera & Photo Library:</strong> Accessed locally on your device solely for capturing and editing photos. Your photos and videos are processed entirely on-device and are <strong>never uploaded, collected, or stored</strong> on any external servers.</li>
+        <li><strong>Microphone & Audio Features (e.g., Voice2):</strong> Requested solely to record audio and enable voice functionality within the App. Audio files are saved and managed strictly on your local device storage.</li>
+        <li><strong>Camera & Photo Library (e.g., 1994 Memory):</strong> Requested solely to capture photos, record videos, and apply vintage filters or processing effects. All media assets remain local to your device.</li>
+        <li><strong>Local Storage:</strong> Used to save user preferences, local databases, and generated files directly on your physical hardware.</li>
     </ul>
 
-    <h2>2. Data Collection & Advertising</h2>
-    <p>The App is free to use and supported by third-party advertising partners. These advertising networks may collect anonymous identifiers and usage data to serve personalized or non-personalized advertisements.</p>
-    <p>Information collected by advertising partners may include:</p>
-    <ul>
-        <li>Device Identifiers (e.g., IDFA / Advertising ID)</li>
-        <li>IP Address and coarse location data</li>
-        <li>App performance and crash logs</li>
-    </ul>
+    <h2>2. In-App Purchases (IAP) & Billing Data</h2>
+    <p>If you choose to purchase digital items or features (such as "Remove Video Ads"), transaction processing is handled entirely by <strong>Apple App Store</strong> (for iOS) or <strong>Google Play Store</strong> (for Android). We do not collect, process, or store payment card details, banking information, or billing addresses.</p>
 
-    <h2>3. Third-Party Services & Ad Networks</h2>
-    <p>We integrate the following trusted third-party SDKs to serve ads and monitor performance. Please review their privacy policies for more information on how they handle data:</p>
+    <h2>3. Advertising & Third-Party SDKs</h2>
+    <p>To support free features, our Apps may integrate third-party advertising SDKs. These ad networks may collect anonymized system diagnostics and device identifiers to deliver non-personalized or personalized advertisements compliant with privacy regulations.</p>
+    <p>Information processed by advertising partners may include:</p>
     <ul>
-        <li><strong>Google AdMob & AdSense:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+        <li>Advertising Identifiers (e.g., IDFA on iOS / Advertising ID on Android)</li>
+        <li>IP Address and approximate coarse location</li>
+        <li>App performance data, crash reports, and diagnostic logs</li>
+    </ul>
+    <p>You can review the privacy policies of our trusted third-party service providers below:</p>
+    <ul>
+        <li><strong>Google AdMob:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+        <li><strong>Meta Audience Network (Facebook Ads):</strong> <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">Meta Privacy Policy</a></li>
         <li><strong>Unity Ads:</strong> <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity Privacy Policy</a></li>
         <li><strong>AppLovin:</strong> <a href="https://www.applovin.com/privacy/" target="_blank" rel="noopener">AppLovin Privacy Policy</a></li>
         <li><strong>ironSource (LevelPlay):</strong> <a href="https://www.is.com/privacy-policy/" target="_blank" rel="noopener">ironSource Privacy Policy</a></li>
     </ul>
 
-    <h2>4. Children's Privacy</h2>
-    <p>The App is rated 4+ and does not knowingly collect personal identifiable information from children under the age of 13. If you believe your child has provided us with personal information, please contact us so we can take immediate action to remove it.</p>
+    <h2>4. Data Retention & Account Deletion</h2>
+    <p>Our Applications do not require user account creation or registration. Because all user-generated content (recordings, edited images, settings) is stored locally on your device, deleting data is entirely under your control. You can permanently erase all data simply by deleting individual files within the App or uninstalling the App from your device.</p>
 
-    <h2>5. Changes to This Privacy Policy</h2>
-    <p>We may update our Privacy Policy from time to time. Any changes will be posted on this page with an updated "Effective Date".</p>
+    <h2>5. Children's Privacy</h2>
+    <p>Our Applications are family-friendly and do not knowingly collect personal identifiable information from children. If you believe a child has provided us with personal information, please contact us so we can immediately address the concern.</p>
 
-    <h2>6. Contact Us</h2>
-    <p>If you have any questions or suggestions regarding this Privacy Policy, please feel free to contact us at:</p>
-    <p><strong>Email:</strong> <a href="mailto:okoong.ch@gmail.com">okoong.ch@gmail.com</a></p>
+    <h2>6. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy periodically to reflect app updates or regulatory changes. Updated policies will be published directly on this page with a revised Effective Date.</p>
+
+    <h2>7. Contact Information</h2>
+    <p>If you have any questions, compliance requests, or support inquiries regarding this Privacy Policy, please contact us:</p>
+    <p><strong>Developer:</strong> Vuttichai Saijaroen<br>
+    <strong>Email:</strong> <a href="mailto:okoong.ch@gmail.com">okoong.ch@gmail.com</a></p>
 
     <div class="footer">
         &copy; 2026 Vuttichai Saijaroen. All rights reserved.
